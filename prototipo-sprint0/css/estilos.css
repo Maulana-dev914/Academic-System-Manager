@@ -508,3 +508,43 @@ img { max-width: 100%; }
   .hero-claro-foto .hero-curva { width: 70px; }
   .hero-claro-texto { padding: 1.6rem; }
 }
+
+/* ---------- 20. Guia + impressão + correções ---------------------------------- */
+.cartao-cab { flex-wrap: wrap; }
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+dialog { max-width: min(420px, calc(100vw - 2rem)); }
+.guia-doc {
+  background: #fff; border: 1px solid var(--borda); border-top: 8px solid var(--marinho);
+  border-radius: 6px; box-shadow: var(--sombra); padding: 2rem;
+  max-width: 760px; margin: 0 auto; font-size: .95rem;
+}
+.guia-topo { text-align: center; border-bottom: 2px solid var(--marinho); padding-bottom: .8rem; margin-bottom: 1rem; }
+.guia-univ { text-transform: uppercase; letter-spacing: .12em; color: var(--azul-escuro); font-weight: 800; margin: 0; font-size: .8rem; }
+.guia-topo h2 { margin: .3rem 0 0; font-size: 1.4rem; }
+.guia-num { display: block; font-size: .85rem; color: var(--suave); font-weight: 400; }
+.guia-doc h3 {
+  color: var(--azul-escuro); text-transform: uppercase; font-size: .78rem;
+  letter-spacing: .08em; border-bottom: 1px solid var(--borda);
+  padding-bottom: .25rem; margin: 1.2rem 0 .5rem;
+}
+.guia-blocos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.guia-doc p { margin: .3rem 0; }
+.guia-tab { font-size: .9rem; }
+.guia-pag { background: #f4f8fd; border: 1px dashed var(--azul-vivo); border-radius: 8px; padding: .8rem 1rem; margin-top: 1rem; }
+.guia-ref { font-size: 1.08rem; }
+.guia-valor strong { color: var(--marinho); }
+.guia-rodape { margin-top: 1rem; padding-top: .6rem; border-top: 1px solid var(--borda); color: var(--suave); font-size: .82rem; }
+@media (max-width: 600px) {
+  .guia-blocos { grid-template-columns: 1fr; }
+  .guia-doc { padding: 1.2rem; }
+  .tabela td { overflow-wrap: anywhere; }
+}
+@media print {
+  .barra-lateral, .topo, .rodape, .no-print, .saltar { display: none !important; }
+  .layout, .coluna { display: block; }
+  .conteudo { max-width: 100%; padding: 0; }
+  body { background: #fff; }
+  .guia-doc { box-shadow: none; border: 1px solid #999; max-width: 100%; }
+  main h1 { font-size: 1.2rem; }
+  a { color: #000; text-decoration: none; }
+}
