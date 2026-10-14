@@ -27,7 +27,7 @@
     <p class="barra-cta"><a class="btn btn-ouro" href="paginas/login.html">Inscrever-se</a></p>
     <div class="slogan">
       <svg class="onda" viewBox="0 0 248 56" aria-hidden="true"><path d="M0 44 Q60 8 124 34 T248 18" stroke="#f5b81f" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M0 52 Q60 16 124 42 T248 26" stroke="#1e73e8" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
-      <p><strong>Educação é o caminho para um futuro melhor.</strong></p>
+      <p><strong>Conhecimento que transforma vidas.</strong></p>
     </div>
     <div class="barra-rodape">
       <svg class="logotipo" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#ffffff"/><text x="24" y="30" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="17" fill="#0b2a4d">UR</text></svg>
@@ -39,11 +39,12 @@
     <header class="topo">
       <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="barra-lateral" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
       <form class="pesquisa" id="pesquisa-topo" role="search" action="index.html">
-        <label class="escondido-visualmente" for="q">Pesquisar no sistema</label>
+        <label class="escondido-visualmente" for="q">Pesquisar no site</label>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="search" id="q" name="q" placeholder="Pesquisar no sistema…" autocomplete="off">
+        <input type="search" id="q" name="q" placeholder="Pesquisar no site…" autocomplete="off">
       </form>
       <p class="topo-data"><strong>14 de Outubro de 2026</strong><span id="relogio">Maputo · GMT+2</span></p>
+      <a class="sino" href="#avisos" aria-label="Ver avisos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></a>
       <details class="perfil-chip">
         <summary aria-label="Menu do visitante"><span class="avatar" aria-hidden="true">V</span><span class="quem"><strong>Visitante</strong><span>Sem sessão</span></span></summary>
         <ul class="perfil-menu">
@@ -51,67 +52,115 @@
           <li><a href="paginas/inscricao.html">Criar conta</a></li>
         </ul>
       </details>
+      <p class="idioma" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>PT ▾</p>
     </header>
 
     <main class="conteudo" id="conteudo">
-      <section class="hero" aria-labelledby="t-hero">
-        <p class="hero-etiqueta">Universidade Rovuma · Ano letivo 2026</p>
-        <h1 id="t-hero">Bem-vindo ao Sistema Académico</h1>
-        <p>Aqui encontra as informações necessárias para a sua vida académica: cursos, inscrições, disciplinas e acompanhamento do seu processo.</p>
-        <p class="hero-acoes">
-          <a class="btn btn-claro" href="paginas/login.html">Inscrever-se</a>
-          <a class="btn btn-contorno-claro" href="paginas/cursos.html">Explorar cursos</a>
-        </p>
-        <p class="hero-flutuante"><strong>Inscrições abertas</strong>Taxa de inscrição até 31/10/2026</p>
+      <section class="hero hero-foto" aria-labelledby="t-hero">
+        <img class="hero-img" src="img/campus.jpg" alt="" aria-hidden="true">
+        <div class="hero-grad" aria-hidden="true"></div>
+        <svg class="hero-curva" viewBox="0 0 120 400" preserveAspectRatio="xMaxYMid slice" aria-hidden="true"><path d="M120 0 C70 120 70 280 120 400" stroke="#f5b81f" stroke-width="26" fill="none"/><path d="M120 0 C92 120 92 280 120 400" stroke="#2f7fe0" stroke-width="10" fill="none"/><path d="M120 0 C106 120 106 280 120 400" stroke="#9fd0ff" stroke-width="4" fill="none"/></svg>
+        <div class="hero-texto">
+          <p class="hero-etiqueta">Universidade Rovuma</p>
+          <h1 id="t-hero">Bem-vindo à <span>Universidade Rovuma</span></h1>
+          <p>Formando profissionais competentes, éticos e comprometidos com o desenvolvimento de Moçambique.</p>
+          <p class="hero-acoes">
+            <a class="btn btn-primario" href="#sobre">Explorar a Universidade →</a>
+            <a class="btn btn-claro" href="paginas/login.html">Inscrever-se</a>
+          </p>
+        </div>
       </section>
 
       <section aria-labelledby="t-rapido">
         <h2 id="t-rapido">Acesso Rápido</h2>
         <p>Encontre facilmente o que precisa.</p>
         <div class="grelha-4">
-          <a class="rapido-card" href="paginas/cursos.html">
+          <a class="rapido-card" data-cor="azul" href="paginas/cursos.html">
             <span class="rapido-icone icone-azul" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
-            <h3>Cursos</h3><p>Conheça os cursos disponíveis.</p><span class="rapido-seta" aria-hidden="true">→</span>
+            <h3>Lista de Cursos</h3><p>Explore os cursos disponíveis e encontre o seu futuro.</p><span class="rapido-seta" aria-hidden="true">→</span>
           </a>
-          <a class="rapido-card" href="paginas/login.html">
+          <a class="rapido-card" data-cor="verde" href="paginas/login.html">
             <span class="rapido-icone icone-verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
-            <h3>Inscrição</h3><p>Faça a sua pré-inscrição.</p><span class="rapido-seta" aria-hidden="true">→</span>
+            <h3>Inscrição</h3><p>Faça a sua pré-inscrição em minutos.</p><span class="rapido-seta" aria-hidden="true">→</span>
           </a>
-          <a class="rapido-card" href="paginas/login.html">
+          <a class="rapido-card" data-cor="amarelo" href="paginas/login.html">
             <span class="rapido-icone icone-amarelo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
             <h3>Entrar</h3><p>Aceda à sua área reservada.</p><span class="rapido-seta" aria-hidden="true">→</span>
           </a>
-          <a class="rapido-card" href="#contactos">
+          <a class="rapido-card" data-cor="roxo" href="#contactos">
             <span class="rapido-icone icone-roxo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
             <h3>Contactos</h3><p>Fale com a secretaria.</p><span class="rapido-seta" aria-hidden="true">→</span>
           </a>
         </div>
       </section>
 
-      <div class="grelha-2-1">
-        <section class="cartao" aria-labelledby="t-noticias">
-          <div class="cartao-cab">
-            <h2 id="t-noticias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notícias e Avisos</h2>
-            <a class="ligacao-seta" href="index.html">Ver todas →</a>
+      <div class="grelha-3">
+        <article class="cartao" id="sobre" aria-labelledby="t-sobre">
+          <div class="sobre-mini">
+            <img src="img/campus.jpg" alt="Edifício principal da Universidade Rovuma">
+            <div>
+              <p class="sobre-olho">Sobre a UR</p>
+              <h2 id="t-sobre">Excelência Académica e Inovação</h2>
+              <p>A Universidade Rovuma é uma instituição de ensino superior pública, comprometida com a formação de profissionais de qualidade, contribuindo para o desenvolvimento sustentável de Moçambique.</p>
+              <p><a class="ligacao-seta" href="paginas/cursos.html">Saiba mais sobre a Universidade →</a></p>
+            </div>
           </div>
-          <article class="noticia">
-            <p class="noticia-data">12<small>Out</small></p>
-            <div><h3>Inscrições 2026 abertas</h3><p>Pré-inscrições abertas até <time datetime="2026-10-31">31 de outubro de 2026</time>. Taxa: 1 500,00 MZN.</p></div>
-          </article>
-          <article class="noticia">
-            <p class="noticia-data">05<small>Out</small></p>
-            <div><h3>Início das aulas do II semestre</h3><p>As aulas do II semestre iniciam no dia <time datetime="2026-11-02">02 de novembro de 2026</time>.</p></div>
-          </article>
-          <article class="noticia">
-            <p class="noticia-data">28<small>Set</small></p>
-            <div><h3>Novos cursos de pós-graduação</h3><p>A Universidade Rovuma abre novas vagas para cursos de pós-graduação.</p></div>
-          </article>
+        </article>
+        <section class="cartao" aria-labelledby="t-nossos-cursos">
+          <div class="cartao-cab">
+            <h2 id="t-nossos-cursos">Nossos Cursos</h2>
+          </div>
+          <div class="lista-cursos">
+            <a href="paginas/cursos.html"><span class="mini-icone icone-azul" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span><span><strong>Informática</strong><small>Prof.ª Ana Machava</small></span><span aria-hidden="true">›</span></a>
+            <a href="paginas/cursos.html"><span class="mini-icone icone-verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span><span><strong>Gestão</strong><small>Prof. Carlos Nhampossa</small></span><span aria-hidden="true">›</span></a>
+            <a href="paginas/cursos.html"><span class="mini-icone icone-amarelo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="14"/></svg></span><span><strong>Contabilidade</strong><small>Prof.ª Fátima Nhaca</small></span><span aria-hidden="true">›</span></a>
+            <a href="paginas/cursos.html"><span class="mini-icone icone-roxo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><span><strong>Eng. Elétrica</strong><small>Prof. Jorge Sitoe</small></span><span aria-hidden="true">›</span></a>
+          </div>
+          <p><a class="ligacao-seta" href="paginas/cursos.html">Ver todos os cursos →</a></p>
         </section>
         <aside class="citacao" aria-label="Mensagem institucional">
           <span class="aspas" aria-hidden="true">“</span>
-          <blockquote><p>A educação transforma realidades.</p></blockquote>
-          <cite>— Universidade Rovuma</cite>
+          <blockquote><p>Uma universidade para o presente, com visão de futuro.</p></blockquote>
+          <cite>Universidade Rovuma</cite>
+          <span class="citacao-marca" aria-hidden="true">UR</span>
         </aside>
+      </div>
+
+      <div class="grelha-2">
+        <section class="cartao" id="avisos" aria-labelledby="t-avisos">
+          <div class="cartao-cab">
+            <h2 id="t-avisos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Avisos</h2>
+          </div>
+          <article class="noticia">
+            <p class="noticia-data">12<small>Out</small></p>
+            <div><h3>Inscrições 2026 abertas</h3><p>Pré-inscrições até <time datetime="2026-10-31">31 de outubro</time>. Taxa: 1 500,00 MZN.</p></div>
+          </article>
+          <article class="noticia">
+            <p class="noticia-data">05<small>Out</small></p>
+            <div><h3>Início das aulas do II semestre</h3><p>Aulas iniciam a <time datetime="2026-11-02">02 de novembro de 2026</time>.</p></div>
+          </article>
+        </section>
+        <section class="cartao faq" aria-labelledby="t-faq">
+          <div class="cartao-cab">
+            <h2 id="t-faq">Perguntas Frequentes</h2>
+          </div>
+          <details>
+            <summary>Como faço a pré-inscrição?</summary>
+            <p>Clique em Inscrever-se, crie a sua conta, escolha as disciplinas e emita a guia de pagamento.</p>
+          </details>
+          <details>
+            <summary>Qual é o prazo das inscrições?</summary>
+            <p>As pré-inscrições de 2026 decorrem até 31 de outubro de 2026.</p>
+          </details>
+          <details>
+            <summary>Quanto custa a taxa de inscrição?</summary>
+            <p>1 500,00 MZN, pagável por ATM, homebanking, M-Pesa, e-Mola ou na tesouraria.</p>
+          </details>
+          <details>
+            <summary>Como acompanho a minha inscrição?</summary>
+            <p>Entre com a sua conta e abra Minhas Inscrições para ver o estado.</p>
+          </details>
+        </section>
       </div>
     </main>
 

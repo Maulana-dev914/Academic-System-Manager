@@ -437,3 +437,42 @@ dialog::backdrop { background: rgba(11, 42, 77, .5); }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ---------- 18. Página inicial (hero com foto + cartões) --------------------- */
+.idioma { display: flex; align-items: center; gap: .3rem; color: var(--suave); font-weight: 700; font-size: .9rem; margin: 0; }
+.idioma svg { width: 20px; height: 20px; }
+.hero-foto { padding: 0; min-height: 380px; display: flex; align-items: center; background: var(--marinho-escuro); }
+.hero-foto::before { display: none; }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center right; }
+.hero-grad { position: absolute; inset: 0; background: linear-gradient(100deg, rgba(7, 30, 56, .94) 25%, rgba(20, 80, 158, .72) 50%, rgba(20, 80, 158, .12) 75%); }
+.hero-curva { position: absolute; right: 0; top: 0; height: 100%; width: 150px; }
+.hero-texto { position: relative; padding: 2.6rem; max-width: 620px; }
+.hero-texto h1 span { display: block; color: #8ec9ff; }
+.rapido-seta { width: 36px; height: 36px; border-radius: 50%; background: var(--azul-claro); color: var(--azul-escuro); display: inline-flex; align-items: center; justify-content: center; }
+.rapido-card[data-cor="verde"] .rapido-seta { background: var(--verde-claro); color: var(--verde-texto); }
+.rapido-card[data-cor="amarelo"] .rapido-seta { background: var(--amarelo-claro); color: var(--amarelo-texto); }
+.rapido-card[data-cor="roxo"] .rapido-seta { background: var(--roxo-claro); color: var(--roxo); }
+.sobre-mini { display: grid; grid-template-columns: 130px 1fr; gap: 1rem; align-items: start; }
+.sobre-mini img { width: 130px; height: 150px; object-fit: cover; object-position: center left; border-radius: 10px; }
+.sobre-olho { text-transform: uppercase; letter-spacing: .1em; font-size: .72rem; font-weight: 800; color: var(--azul); margin: 0; }
+.lista-cursos { display: grid; margin: 0 0 1rem; }
+.lista-cursos a { display: grid; grid-template-columns: auto 1fr auto; gap: .8rem; align-items: center; padding: .65rem 0; border-bottom: 1px solid var(--borda); text-decoration: none; color: var(--texto); }
+.lista-cursos a:last-child { border-bottom: 0; }
+.lista-cursos strong { display: block; font-size: .95rem; }
+.lista-cursos small { color: var(--suave); }
+.mini-icone { width: 38px; height: 38px; border-radius: 10px; color: #fff; display: flex; align-items: center; justify-content: center; }
+.mini-icone svg { width: 19px; height: 19px; }
+.citacao { position: relative; overflow: hidden; }
+.citacao-marca { position: absolute; right: -6px; bottom: -34px; font-size: 7rem; font-weight: 800; color: rgba(255, 255, 255, .12); line-height: 1; }
+.faq details { border-bottom: 1px solid var(--borda); }
+.faq details:last-child { border-bottom: 0; }
+.faq summary { cursor: pointer; font-weight: 700; padding: .8rem 0; color: var(--marinho); }
+.faq details p { margin: 0 0 .9rem; color: var(--suave); }
+@media (max-width: 760px) {
+  .hero-foto { min-height: 320px; }
+  .hero-curva { width: 90px; opacity: .8; }
+  .hero-texto { padding: 1.8rem 1.4rem; }
+  .sobre-mini { grid-template-columns: 1fr; }
+  .sobre-mini img { width: 100%; height: 160px; }
+  .idioma { display: none; }
+}
