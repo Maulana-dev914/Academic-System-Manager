@@ -476,3 +476,35 @@ dialog::backdrop { background: rgba(11, 42, 77, .5); }
   .sobre-mini img { width: 100%; height: 160px; }
   .idioma { display: none; }
 }
+
+/* ---------- 19. Inicial clara (hero + lateral + notícias) ---------------------- */
+.pesquisa { min-width: 0; }
+img { max-width: 100%; }
+.hero-linha { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; align-items: stretch; }
+.hero-claro { position: relative; overflow: hidden; display: grid; grid-template-columns: 1.05fr 1fr; background: #edf3fd; border-radius: 18px; min-height: 340px; }
+.hero-claro-texto { padding: 2.2rem; align-self: center; }
+.hero-claro-texto .hero-etiqueta { color: var(--azul); }
+.hero-claro-texto h1 { color: var(--marinho); font-size: clamp(1.7rem, 3.6vw, 2.5rem); margin: 0 0 .6rem; }
+.hero-claro-texto p { color: var(--suave); max-width: 44ch; }
+.hero-claro-foto { position: relative; min-height: 240px; }
+.hero-claro-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; max-width: none; }
+.hero-claro-foto .hero-curva { width: 110px; }
+.lado-card { background: #f2f7ff; border: 1px solid var(--borda); border-radius: 18px; padding: 1.6rem; display: flex; flex-direction: column; }
+.lado-icone { width: 52px; height: 52px; border-radius: 50%; background: var(--azul-claro); color: var(--azul-escuro); display: flex; align-items: center; justify-content: center; margin-bottom: .8rem; }
+.lado-icone svg { width: 26px; height: 26px; }
+.lado-card h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
+.lado-card p { color: var(--suave); font-size: .95rem; }
+.lado-card .ligacao-seta { margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--borda); }
+.grelha-noticias { display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.5rem; }
+.citacao-fundo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .25; max-width: none; }
+.citacao > *:not(.citacao-fundo):not(.citacao-marca) { position: relative; }
+.citacao .traco { width: 64px; height: 4px; background: var(--amarelo); border-radius: 2px; margin-top: 1rem; }
+@media (max-width: 1100px) {
+  .hero-linha, .grelha-noticias { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .hero-claro { grid-template-columns: 1fr; min-height: 0; }
+  .hero-claro-foto { min-height: 200px; order: -1; }
+  .hero-claro-foto .hero-curva { width: 70px; }
+  .hero-claro-texto { padding: 1.6rem; }
+}
