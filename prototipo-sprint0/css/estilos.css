@@ -488,7 +488,7 @@ img { max-width: 100%; }
 .hero-claro-texto p { color: var(--suave); max-width: 44ch; }
 .hero-claro-foto { position: relative; min-height: 240px; }
 .hero-claro-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; max-width: none; }
-.hero-claro-foto .hero-curva { width: 110px; }
+.hero-claro-foto .hero-curva { left: 0; right: auto; width: 110px; }
 .lado-card { background: #f2f7ff; border: 1px solid var(--borda); border-radius: 18px; padding: 1.6rem; display: flex; flex-direction: column; }
 .lado-icone { width: 52px; height: 52px; border-radius: 50%; background: var(--azul-claro); color: var(--azul-escuro); display: flex; align-items: center; justify-content: center; margin-bottom: .8rem; }
 .lado-icone svg { width: 26px; height: 26px; }
@@ -547,4 +547,17 @@ dialog { max-width: min(420px, calc(100vw - 2rem)); }
   .guia-doc { box-shadow: none; border: 1px solid #999; max-width: 100%; }
   main h1 { font-size: 1.2rem; }
   a { color: #000; text-decoration: none; }
+}
+
+/* ---------- 21. Inicial com fotos (notícias + citação) ---------------------- */
+.noticia { grid-template-columns: auto auto 1fr; align-items: center; }
+.noticia-foto { width: 96px; height: 96px; object-fit: cover; border-radius: 12px; flex: none; }
+.citacao-pessoa { display: flex; align-items: center; gap: .8rem; margin: 1rem 0 0; }
+.citacao-foto { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 3px solid var(--amarelo); flex: none; }
+.citacao-pessoa cite { font-style: normal; font-weight: 700; font-size: .95rem; }
+.citacao-pessoa cite small { display: block; font-weight: 400; color: var(--marinho-texto); }
+@media (max-width: 600px) {
+  .noticia { grid-template-columns: auto 1fr; }
+  .noticia-foto { width: 72px; height: 72px; }
+  .noticia-data { display: none; }
 }
