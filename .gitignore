@@ -1,0 +1,20 @@
+# Dependências do sistema real (Sprints 1+, CodeIgniter 4 via Composer)
+vendor/
+
+# Segredos locais — NUNCA versionar (RNF08)
+app/Config/config.local.php
+*.local.php
+.env
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
