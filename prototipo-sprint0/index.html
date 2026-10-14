@@ -20,13 +20,15 @@
     <nav class="menu" aria-label="Menu principal">
       <ul>
         <li><a href="index.html" class="ativo" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Início</a></li>
-        <li><a href="paginas/cursos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Cursos</a></li>
-        <li><a href="paginas/login.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Entrar</a></li>
+        <li><a href="#sobre-ur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9l10-5 10 5"/><path d="M4 9v10M20 9v10M2 19h20M8 12v5M12 12v5M16 12v5"/></svg>Informações da Universidade</a></li>
+        <li><a href="paginas/cursos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/></svg>Lista de Cursos</a></li>
+        <li><a href="#sobre-ur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Sobre Nós</a></li>
+        <li><a href="#contactos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>FAQ</a></li>
       </ul>
     </nav>
     <div class="slogan">
-      <svg class="onda" viewBox="0 0 248 56" aria-hidden="true"><path d="M0 44 Q60 8 124 34 T248 18" stroke="#f5b81f" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M0 52 Q60 16 124 42 T248 26" stroke="#1e73e8" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
-      <p><strong>Educação é o caminho para um futuro melhor.</strong></p>
+      <svg class="onda" viewBox="0 0 248 56" aria-hidden="true"><path d="M-8 58 Q60 50 120 30 T256 8" stroke="#1e73e8" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M-8 64 Q70 56 130 38 T256 18" stroke="#5aa2f0" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+      <p><span class="slogan-traco" aria-hidden="true"></span><strong>Conhecimento que transforma vidas.</strong></p>
     </div>
   </aside>
 
@@ -34,11 +36,11 @@
     <header class="topo">
       <button class="botao-menu" id="botao-menu" type="button" aria-expanded="false" aria-controls="barra-lateral" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
       <form class="pesquisa" id="pesquisa-topo" role="search" action="index.html">
-        <label class="escondido-visualmente" for="q">Pesquisar no sistema</label>
+        <label class="escondido-visualmente" for="q">Pesquisar no site</label>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="search" id="q" name="q" placeholder="Pesquisar no sistema…" autocomplete="off">
+        <input type="search" id="q" name="q" placeholder="Pesquisar no site…" autocomplete="off">
       </form>
-      <a class="sino" href="#noticias" aria-label="Ver notícias e avisos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></a>
+      <a class="sino" href="#sobre-ur" aria-label="Ver novidades da Universidade"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></a>
       <details class="perfil-chip">
         <summary aria-label="Menu do visitante"><span class="avatar avatar-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span class="quem"><strong>Visitante</strong></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
         <ul class="perfil-menu">
@@ -46,74 +48,79 @@
           <li><a href="paginas/inscricao.html">Criar conta</a></li>
         </ul>
       </details>
+      <details class="idioma">
+        <summary aria-label="Idioma: Português"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>PT</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+        <ul class="perfil-menu">
+          <li><a href="index.html" aria-current="true">Português ✓</a></li>
+          <li><span class="brevemente">English (brevemente)</span></li>
+        </ul>
+      </details>
     </header>
 
     <main class="conteudo" id="conteudo">
-      <div class="hero-linha">
-        <section class="hero-claro" aria-labelledby="t-hero">
-          <div class="hero-claro-texto">
-            <p class="hero-etiqueta">Universidade Rovuma</p>
-            <h1 id="t-hero">Bem-vindo ao Sistema Académico</h1>
-            <p>Aqui você encontra as informações necessárias para a sua vida académica. Navegue pelos menus para aceder aos serviços disponíveis.</p>
-            <p class="hero-acoes">
-              <a class="btn btn-primario" href="paginas/cursos.html">Explorar o sistema →</a>
-            </p>
-          </div>
-          <div class="hero-claro-foto">
-            <img src="img/hero-campus.png" alt="" aria-hidden="true">
-            <svg class="hero-curva" viewBox="0 0 120 400" preserveAspectRatio="xMaxYMid slice" aria-hidden="true"><path d="M105 -10 C55 110 55 290 105 410" stroke="#f5b81f" stroke-width="24" fill="none"/><path d="M122 -10 C78 110 78 290 122 410" stroke="#2f7fe0" stroke-width="10" fill="none"/></svg>
-          </div>
-        </section>
-        <aside class="lado-card" aria-labelledby="t-lado">
-          <span class="lado-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></span>
-          <h2 id="t-lado">Juntos por um futuro melhor</h2>
-          <p>A Universidade Rovuma oferece formação de qualidade, com foco no desenvolvimento de competências para o mercado de trabalho.</p>
-          <p><a class="ligacao-seta" href="paginas/cursos.html">Saiba mais sobre a UR →</a></p>
-        </aside>
-      </div>
+      <section class="hero-escuro" aria-labelledby="t-hero">
+        <img class="hero-escuro-foto" src="img/hero-campus.png" alt="" aria-hidden="true">
+        <div class="hero-escuro-velo" aria-hidden="true"></div>
+        <div class="hero-escuro-texto">
+          <p class="hero-etiqueta">Universidade Rovuma</p>
+          <h1 id="t-hero">Bem-vindo à<br><span>Universidade Rovuma</span></h1>
+          <p>Formando profissionais competentes, éticos e comprometidos com o desenvolvimento de Moçambique.</p>
+          <p class="hero-acoes">
+            <a class="btn btn-primario" href="paginas/cursos.html">Explorar a Universidade →</a>
+          </p>
+        </div>
+        <svg class="hero-escuro-curvas" viewBox="0 0 120 400" preserveAspectRatio="xMaxYMid slice" aria-hidden="true"><path d="M88 -10 C48 110 48 290 88 410" stroke="#f5b81f" stroke-width="20" fill="none"/><path d="M112 -10 C76 110 76 290 112 410" stroke="#2f7fe0" stroke-width="9" fill="none"/></svg>
+      </section>
 
-      <section aria-labelledby="t-rapido">
+      <section class="secao-rapido" aria-labelledby="t-rapido">
         <h2 id="t-rapido">Acesso Rápido</h2>
         <p>Encontre facilmente o que precisa.</p>
         <div class="grelha-4">
-          <a class="rapido-card" data-cor="azul" href="paginas/cursos.html">
-            <span class="rapido-icone icone-azul" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
-            <h3>Cursos</h3><p>Conheça os cursos disponíveis.</p><span class="rapido-seta" aria-hidden="true">→</span>
+          <a class="rapido-card" data-cor="azul" href="#sobre-ur">
+            <span class="rapido-icone icone-azul" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 9l10-5 10 5"/><path d="M4 9v10M20 9v10M2 19h20M8 12v5M12 12v5M16 12v5"/></svg></span>
+            <h3>Informações da Universidade</h3><p>Conheça a nossa história, missão, visão e estrutura.</p><span class="rapido-seta" aria-hidden="true">→</span>
           </a>
-          <a class="rapido-card" data-cor="amarelo" href="paginas/inscricao.html">
-            <span class="rapido-icone icone-amarelo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
-            <h3>Inscrição</h3><p>Faça a sua pré-inscrição.</p><span class="rapido-seta" aria-hidden="true">→</span>
+          <a class="rapido-card" data-cor="verde" href="paginas/cursos.html">
+            <span class="rapido-icone icone-verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+            <h3>Lista de Cursos</h3><p>Explore os cursos disponíveis e encontre o seu futuro.</p><span class="rapido-seta" aria-hidden="true">→</span>
           </a>
-          <a class="rapido-card" data-cor="verde" href="paginas/login.html">
-            <span class="rapido-icone icone-verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
-            <h3>Entrar</h3><p>Aceda à sua área reservada.</p><span class="rapido-seta" aria-hidden="true">→</span>
+          <a class="rapido-card" data-cor="roxo" href="#sobre-ur">
+            <span class="rapido-icone icone-roxo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <h3>Sobre Nós</h3><p>Saiba mais sobre a nossa equipe e valores.</p><span class="rapido-seta" aria-hidden="true">→</span>
           </a>
-          <a class="rapido-card" data-cor="marinho" href="#contactos">
-            <span class="rapido-icone icone-marinho" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-            <h3>Contactos</h3><p>Fale com a secretaria.</p><span class="rapido-seta" aria-hidden="true">→</span>
+          <a class="rapido-card" data-cor="laranja" href="#contactos">
+            <span class="rapido-icone icone-laranja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+            <h3>FAQ</h3><p>Tire as suas dúvidas com rapidez.</p><span class="rapido-seta" aria-hidden="true">→</span>
           </a>
         </div>
       </section>
 
-      <div class="grelha-noticias">
-        <section class="cartao" id="noticias" aria-labelledby="t-noticias">
-          <div class="cartao-cab">
-            <h2 id="t-noticias"><span class="noticia-icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11v3h4l10 5V6l-10 5H3z"/><path d="M8 15l1 5"/></svg></span>Notícias e Avisos</h2>
-            <a class="ligacao-seta" href="#noticias">Ver todas →</a>
+      <div class="grelha-sobre">
+        <article class="cartao sobre-card" id="sobre-ur" aria-labelledby="t-sobre">
+          <div class="sobre-mini">
+            <img src="img/sobre-campus.png" alt="Edifício da Universidade Rovuma rodeado de palmeiras">
+            <div>
+              <p class="sobre-olho">Sobre a UR</p>
+              <h2 id="t-sobre">Excelência Académica e Inovação</h2>
+              <p class="sobre-texto">A Universidade Rovuma é uma instituição de ensino superior pública, comprometida com a formação de profissionais de qualidade, contribuindo para o desenvolvimento sustentável de Moçambique.</p>
+              <p><a class="ligacao-seta" href="paginas/cursos.html">Saiba mais sobre a Universidade →</a></p>
+            </div>
           </div>
-          <article class="noticia">
-            <p class="noticia-data">12<small>Out</small></p>
-            <div><h3>Inscrições 2026 abertas</h3><p>Pré-inscrições até <time datetime="2026-10-31">31 de outubro de 2026</time>. Taxa: 1 500,00 MZN.</p></div>
-          </article>
-          <article class="noticia">
-            <p class="noticia-data">05<small>Out</small></p>
-            <div><h3>Início das aulas do II semestre académico</h3><p>As aulas iniciam no dia <time datetime="2026-11-02">02 de novembro de 2026</time>.</p></div>
-          </article>
+        </article>
+        <section class="cartao cursos-card" aria-labelledby="t-nossos">
+          <p class="cursos-titulo"><span class="mini-icone icone-azul" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></span><strong id="t-nossos">Nossos Cursos</strong></p>
+          <div class="lista-cursos">
+            <a href="paginas/cursos.html"><span class="mini-icone icone-azul" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></span><span><strong>Licenciaturas</strong><small>Formação de base para um futuro melhor</small></span><span class="lista-seta" aria-hidden="true">›</span></a>
+            <a href="paginas/cursos.html"><span class="mini-icone icone-roxo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span><strong>Mestrados</strong><small>Aprofunde o seu conhecimento</small></span><span class="lista-seta" aria-hidden="true">›</span></a>
+            <a href="paginas/cursos.html"><span class="mini-icone icone-verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span><strong>Pós-Graduações</strong><small>Especialização e novas oportunidades</small></span><span class="lista-seta" aria-hidden="true">›</span></a>
+          </div>
+          <p><a class="ligacao-seta" href="paginas/cursos.html">Ver todos os cursos →</a></p>
         </section>
         <aside class="citacao" aria-label="Mensagem institucional">
-          <img class="citacao-fundo" src="img/citacao-campus.png" alt="" aria-hidden="true">
-          <span class="aspas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3l-2 4zm8 0h3l2-4V7h-6v6h3l-2 4z"/></svg></span>
-          <blockquote><p>A educação transforma realidades.</p></blockquote>
+          <span class="citacao-marca" aria-hidden="true">UR</span>
+          <span class="aspas aspas-azul" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3l-2 4zm8 0h3l2-4V7h-6v6h3l-2 4z"/></svg></span>
+          <blockquote><p>Uma universidade para o presente, com visão de futuro.</p></blockquote>
+          <cite>Universidade Rovuma</cite>
           <span class="traco" aria-hidden="true"></span>
         </aside>
       </div>

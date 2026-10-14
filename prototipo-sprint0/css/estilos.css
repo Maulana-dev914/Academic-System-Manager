@@ -577,3 +577,56 @@ dialog { max-width: min(420px, calc(100vw - 2rem)); }
   .hero-claro-foto { border-radius: 0; }
   .hero-claro-foto .hero-curva { display: none; }
 }
+
+/* ---------- 22. Portal moderno (hero escuro + cartões com cor) ---------------- */
+.coluna { background: #fff; }
+.rodape { background: var(--fundo); }
+.sino { background: none; color: var(--texto); }
+.perfil-chip { border: 0; padding-left: 0; }
+.avatar-icone { background: var(--marinho); }
+.idioma { position: relative; }
+.idioma summary { list-style: none; display: flex; align-items: center; gap: .3rem; cursor: pointer; color: var(--suave); font-weight: 700; font-size: .9rem; }
+.idioma summary::-webkit-details-marker { display: none; }
+.idioma summary svg { width: 18px; height: 18px; }
+.idioma .perfil-menu { min-width: 170px; }
+.brevemente { display: block; padding: .55rem .8rem; color: var(--suave); font-size: .9rem; }
+.slogan-traco { display: block; width: 36px; height: 4px; border-radius: 2px; background: var(--azul-vivo); margin-bottom: .6rem; }
+.hero-escuro { position: relative; overflow: hidden; border-radius: 18px; min-height: 380px; display: flex; align-items: center; background: var(--marinho-escuro); margin-bottom: 1.5rem; }
+.hero-escuro-foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; max-width: none; }
+.hero-escuro-velo { position: absolute; inset: 0; background: linear-gradient(95deg, rgba(7, 30, 56, .96) 20%, rgba(11, 42, 77, .68) 45%, rgba(11, 42, 77, .05) 78%); }
+.hero-escuro-texto { position: relative; padding: 3rem; max-width: 640px; }
+.hero-escuro .hero-etiqueta { color: #9fd0ff; }
+.hero-escuro-texto p { color: #d7e6f8; }
+.hero-escuro-texto .hero-acoes { margin-top: 1.4rem; }
+.hero-escuro h1 { color: #fff; font-size: clamp(1.9rem, 4vw, 2.7rem); margin: 0 0 .7rem; }
+.hero-escuro h1 span { display: block; color: #8ec9ff; }
+.hero-escuro .btn-primario { background: var(--azul-vivo); border-radius: 999px; }
+.hero-escuro-curvas { position: absolute; right: 0; top: 0; height: 100%; width: 110px; }
+.secao-rapido { margin-bottom: 1.5rem; }
+#t-rapido::before { content: ""; display: block; width: 36px; height: 4px; border-radius: 2px; background: var(--azul-vivo); margin-bottom: .5rem; }
+.rapido-card[data-cor="azul"] { background: #eaf3fe; }
+.rapido-card[data-cor="verde"] { background: #e9faf0; }
+.rapido-card[data-cor="roxo"] { background: #f3edfe; }
+.rapido-card[data-cor="laranja"] { background: #fff4e5; }
+.icone-laranja { background: #f59e0b; }
+.rapido-card[data-cor] .rapido-seta { width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; bottom: 1.2rem; }
+.rapido-card[data-cor="azul"] .rapido-seta { background: #d7e8fd; color: var(--azul-escuro); }
+.rapido-card[data-cor="verde"] .rapido-seta { background: #d3f2df; color: var(--verde-texto); }
+.rapido-card[data-cor="roxo"] .rapido-seta { background: #e6d9fd; color: var(--roxo); }
+.rapido-card[data-cor="laranja"] .rapido-seta { background: #ffe8c7; color: #b45309; }
+.grelha-sobre { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 1.5rem; }
+.sobre-mini h2 { font-size: 1.15rem; margin: 0 0 .4rem; }
+.sobre-texto { font-size: .9rem; color: var(--suave); margin: 0 0 .8rem; }
+.cursos-titulo { display: flex; align-items: center; gap: .7rem; margin: 0 0 .6rem; font-size: 1.05rem; color: var(--marinho); }
+.lista-seta { color: var(--azul); font-weight: 800; font-size: 1.2rem; }
+.citacao blockquote { font-size: 1.15rem; }
+.citacao .aspas.aspas-azul { color: #5aa2f0; }
+.citacao .traco { background: var(--azul-vivo); }
+@media (max-width: 1100px) {
+  .grelha-sobre { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .hero-escuro { min-height: 340px; }
+  .hero-escuro-texto { padding: 2rem 1.5rem; }
+  .hero-escuro-curvas { display: none; }
+}
