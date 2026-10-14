@@ -2,9 +2,15 @@
 // Protótipo Sprint 0 — interações simuladas (sem servidor).
 // Tudo funciona sem JavaScript, exceto: login simulado, guardas de acesso,
 // resumo de erros, seleção de disciplinas e impressão da guia.
+//
+// Caminhos: index.html está na raiz; as restantes páginas estão em paginas/.
+// A variável BASE ajusta os regressos ao início conforme a pasta atual.
 // ============================================================================
 (function () {
   "use strict";
+
+  var EM_PAGINAS = window.location.pathname.indexOf("/paginas/") !== -1;
+  var BASE = EM_PAGINAS ? "../" : "";
 
   // ---------- 1. Menu móvel (hamburger) ----------
   var botaoMenu = document.getElementById("botao-menu");
@@ -78,11 +84,14 @@
       e.preventDefault();
       sessionStorage.removeItem("sessao");
       sessionStorage.removeItem("selecao");
-      window.location.href = "index.html";
+      sessionStorage.removeItem("preInscricao");
+      window.location.href = BASE + "index.html";
     });
   });
 
   // ---------- 6. Guardas de acesso (simulam CT09/CT15/CT21) ----------
+  // As páginas protegidas vivem em paginas/, tal como o login: o redirect
+  // usa apenas o nome do ficheiro.
   var guarda = document.body.getAttribute("data-guarda");
   if (guarda) {
     var sessao = lerSessao();
@@ -96,7 +105,7 @@
           "<h1 id='t403'>403 — Sem permissão (simulado)</h1>" +
           "<p>O perfil <strong>" + sessao.perfil + "</strong> não tem acesso a esta página. " +
           "No sistema real, esta tentativa ficaria registada na auditoria.</p>" +
-          "<p><a class='btn btn-primario' href='index.html'>Voltar ao início</a></p></section>";
+          "<p><a class='btn btn-primario' href='" + BASE + "index.html'>Voltar ao início</a></p></section>";
       }
     }
   }
@@ -132,7 +141,7 @@
             a.textContent = nome + ": " + (campo.validationMessage || "valor inválido");
             li.appendChild(a);
             lista.appendChild(li);
-            campo.closest(".campo").classList.add("campo-erro");
+            if (campo.closest(".campo")) campo.closest(".campo").classList.add("campo-erro");
           });
           resumo.hidden = false;
           resumo.focus();
